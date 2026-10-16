@@ -1,13 +1,11 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import Navbar from "./components/navbar";
 
 export default function Home() {
   return (
   <div className="min-h-screen">
     <title>Steven&apos;s Website</title>
     <main>
-      {Navbar()}
       <h1 className="flex font-bold justify-center m-5">About Me</h1>
       <div className="about">
         <Image
@@ -25,8 +23,5 @@ export default function Home() {
         </div>
       </div>
     </main>
-    <footer className="footer">
-      © 2026 Steven&apos;s Website | All Rights Reserved
-    </footer>
   </div>
   )}
