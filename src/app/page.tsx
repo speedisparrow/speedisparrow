@@ -5,12 +5,12 @@ import Navbar from "./components/navbar";
 export default function Home() {
   return (
   <div className="min-h-screen">
-    <title>Steven's Website</title>
+    <title>Steven&apos;s Website</title>
     <main>
       {Navbar()}
-      <h1 className="page-title">About Me</h1>
+      <h1 className="flex font-bold justify-center m-5">About Me</h1>
       <div className="about">
-        <img
+        <Image
         width={200}
         height={200}
         src="/IMG_20260510_121454_660.webp"
@@ -26,7 +26,7 @@ export default function Home() {
       </div>
     </main>
     <footer className="footer">
-      © 2026 Steven's Website | All Rights Reserved
+      © 2026 Steven&apos;s Website | All Rights Reserved
     </footer>
   </div>
   )}
