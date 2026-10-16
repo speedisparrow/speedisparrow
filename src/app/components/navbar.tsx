@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-const directory: object[] = [
+const directory = [
   {
     name: "Home",
     link: "/",
@@ -32,7 +32,15 @@ export default function Navbar() {
   return (
     <nav className="flex bg-black text-white w-screen justify-between">
       <h1 className="flex self-center justify-start px-5">
-        <Link href="/"><Image src="public\vercel.svg" width={50} height={10}/></Link>
+        <Link href="/">
+          <Image
+            src="https://cdn-icons-png.flaticon.com/512/6017/6017412.png"
+            width={20}
+            height={20}
+            alt="place-holder logo"
+            className="bg-white rounded-lg"
+          />
+        </Link>
       </h1>
       <ul className="flex self-center px-2">{listDirectory}</ul>
     </nav>
