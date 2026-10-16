@@ -1,5 +1,5 @@
 @import "tailwindcss";
-body {
+* body {
   background-color: rgb(204, 236, 240);
 }
 @font-face {
@@ -17,31 +17,3 @@ body {
   -ms-overflow-style: none !important;
   scrollbar-width: none !important;
 }
-
-/* .navbar {
-  background-color: black;
-}
-.navbar ul {
-  color: white;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-.logo a {
-  float: left;
-  text-decoration: none;
-}
-.navbar li a {
-  float: right;
-  display: block;
-  color: white;
-  padding: 8px 16px;
-  text-decoration: none;
-}
-li a:hover {
-  background-color: #555555;
-  color: white;
-}
-li a:active {
-  background-color: white;
-} */

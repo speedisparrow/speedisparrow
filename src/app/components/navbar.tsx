@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const directory: object[] = [
   {
@@ -31,7 +32,7 @@ export default function Navbar() {
   return (
     <nav className="flex bg-black text-white w-screen justify-between">
       <h1 className="flex self-center justify-start px-5">
-        <Link href="/">Steven&apos;s Website</Link>
+        <Link href="/"><Image src="public\vercel.svg" width={50} height={10}/></Link>
       </h1>
       <ul className="flex self-center px-2">{listDirectory}</ul>
     </nav>
