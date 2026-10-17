@@ -22,15 +22,18 @@ const directory = [
 
 export default function Navbar() {
   const listDirectory = directory.map((navItem) => (
-    <li
-      key={navItem.link}
-      className="flex content-center"
-    >
-      <Link href={navItem.link} className="p-1 flex items-center transition hover:shadow-lg shadow-white hover:scale-110 hover:text-black hover:bg-white">{navItem.name}</Link>
+    <li key={navItem.link} className="flex flex-1 content-center bg-black">
+      <Link
+        href={navItem.link}
+        className="p-1 flex items-center transition w-20 justify-center
+         shadow-white hover:scale-110 hover:text-black hover:bg-white"
+      >
+        {navItem.name}
+      </Link>
     </li>
   ));
   return (
-    <nav className="flex flex-column bg-black text-white w-screen justify-between h-20">
+    <nav className="flex bg-black text-white w-screen justify-between h-20">
       <h1 className="self-center justify-start px-5">
         <Link href="/">
           <Image
@@ -42,7 +45,7 @@ export default function Navbar() {
           />
         </Link>
       </h1>
-      <ul className="flex m-2">{listDirectory}</ul>
+      <ul className="flex">{listDirectory}</ul>
     </nav>
   );
 }
