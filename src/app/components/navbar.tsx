@@ -25,15 +25,16 @@ export default function Navbar() {
     <li key={navItem.link} className="flex flex-1 content-center bg-black">
       <Link
         href={navItem.link}
-        className="p-1 flex items-center transition w-20 justify-center
-         shadow-white hover:scale-110 hover:text-black hover:bg-white"
+        className="p-1 flex items-center transition w-20 justify-center shadow-white 
+        hover:scale-110 hover:text-black hover:bg-white
+        active:scale-110 active:text-black active:bg-white"
       >
         {navItem.name}
       </Link>
     </li>
   ));
   return (
-    <nav className="flex bg-black text-white w-screen justify-between h-20">
+    <nav className="flex bg-black text-white w-screen justify-between h-15">
       <h1 className="self-center justify-start px-5">
         <Link href="/">
           <Image
