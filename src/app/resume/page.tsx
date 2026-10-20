@@ -66,6 +66,7 @@ const entries: ResumeSection[] = [
             <a
               className="text-blue-600 "
               href="https://github.com/speedisparrow/speedisparrow"
+              target="_blank"
             >
               GitHub
             </a>
@@ -97,7 +98,7 @@ const entries: ResumeSection[] = [
 export default function Resume() {
   return (
     <div>
-      <main className="flex flex-col size-8/10 m-20 p-10 justify-center border-3 rounded-xl bg-white">
+      <main className="flex flex-col m-20 p-10 justify-center border-3 rounded-xl bg-white">
         <div className="grid grid-cols-3">
           <h1 className="font-bold text-3xl col-start-2 justify-self-center m-1">
             Resume
