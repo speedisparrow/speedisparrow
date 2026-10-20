@@ -6,6 +6,7 @@ type ResumeSection = {
 };
 
 type ResumeEntry = {
+  id: number;
   organization?: string;
   position?: string;
   timeFrame?: string;
@@ -17,6 +18,7 @@ const entries: ResumeSection[] = [
     sectionTitle: "Education",
     resumeEntry: [
       {
+        id: 1,
         organization: "Cal Poly",
         position: "BS in Computer Science",
         timeFrame: "Expected Graduation 2030",
@@ -32,6 +34,7 @@ const entries: ResumeSection[] = [
     sectionTitle: "Experience",
     resumeEntry: [
       {
+        id: 2,
         organization: "Hack4Impact",
         position: "Software Developer",
         timeFrame: "September 2026 - Present",
@@ -39,6 +42,7 @@ const entries: ResumeSection[] = [
         Working on full stack development with Next.js, MongoDB, and React in small, student-led teams.`,
       },
       {
+        id: 3,
         organization: "OUSD Computer Repair",
         position: "Tech Repair Intern",
         timeFrame: "June 2024 - July 2024",
@@ -52,6 +56,7 @@ const entries: ResumeSection[] = [
     sectionTitle: "Projects",
     resumeEntry: [
       {
+        id: 4,
         organization: "This Website!",
         desc: (
           <p>
@@ -74,6 +79,7 @@ const entries: ResumeSection[] = [
     sectionTitle: "Skills",
     resumeEntry: [
       {
+        id: 5,
         desc: (
           <ul className="list-disc pl-5 list-outside">
             <li>Languages: C++, TypeScript, Python, HTML, CSS</li>
@@ -113,7 +119,7 @@ export default function Resume() {
               </h2>
               {resumeSection.resumeEntry.map((subSection) => {
                 return (
-                  <div key={subSection.organization + subSection.position}>
+                  <div key={subSection.id}>
                     <h3 className="text-xl font-bold mt-2 mb-0.5">
                       {subSection.organization}
                     </h3>
