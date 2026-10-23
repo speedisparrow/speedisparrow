@@ -6,8 +6,8 @@ export default function Home() {
     <div className="min-h-screen">
       <title>Steven</title>
       <main>
-        <h1 className="flex font-bold justify-center m-5">Steven</h1>
-        <section className="flex justify-self-center justify-between bg-white w-8/10">
+        <h1 className="flex text-3xl font-bold justify-center m-10">Steven</h1>
+        <section className="flex justify-self-center justify-between mx-20 p-10 border-3 rounded-xl bg-white">
           <div className="justify-start self-center p-5 w-6/10">
             <p>
               First year Computer Science student at Cal Poly.
